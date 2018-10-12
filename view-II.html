@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>View I</title>
+    <title>View II</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,7 +11,8 @@
     <!--Javascript-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhBS96n2DPwEuEjnIUPQXFDh9AUsgC4Hc&callback=initialize"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
 
 </head>
 <body>
@@ -30,11 +31,15 @@
     </div>
 </nav>
 
-<div class="container" id="col-map">
+<div class="container" id="col-chart">
     <div class="row">
-        <div class="col-lg-12">
-            <div id="map-canvas"></div>
-            <script src="js/maps-google.js"></script>
+        <div class="col-lg-6">
+            <canvas id="myChart-01"></canvas>
+            <script src="js/chart01.js"></script>
+        </div>
+        <div class="col-lg-6">
+            <canvas id="myChart-02"></canvas>
+            <script src="js/chart02.js"></script>
         </div>
     </div>
 </div>

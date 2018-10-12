@@ -1,7 +1,10 @@
-// function myMap() {
-//     var mapProp= {
-//         center:new google.maps.LatLng(51.508742,-0.120850),
-//         zoom:5,
-//     };
-//     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-// }
+function initialize() {
+    var mapOptions = {
+        center: new google.maps.LatLng(0, 0),
+        zoom: 2.5,
+        minZoom: 2
+    };
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);

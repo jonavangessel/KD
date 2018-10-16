@@ -16,25 +16,27 @@ var firefoxIcon = L.icon({
 });
 
 // Animals
-Koala = L.marker([-26.38, 135.24], {icon: firefoxIcon}).addTo(map);
-GalapagosTortoise = L.marker([-0.63, -90.36]).addTo(map);
-Penguin = L.marker([-73.25, 18.10]).addTo(map);
-Bizon = L.marker([38.20, -101.35]).addTo(map);
-Slut = L.marker([-5.70, -59.19]).addTo(map);
-Panda = L.marker([28.23, 110.86]).addTo(map);
-MantaRay = L.marker([-5.70, 119.29]).addTo(map);
-PolarBear = L.marker([64.74, -69.03]).addTo(map);
-Lion = L.marker([-20.72, 23.72]).addTo(map);
-Camel = L.marker([23.16, 7.56]).addTo(map);
-
-Koala.bindPopup("Koala");
-GalapagosTortoise .bindPopup("Galaápagos tortoise ");
-Penguin.bindPopup("Penguin");
-Bizon.bindPopup("Bizon");
-Slut.bindPopup("Sloth");
-Panda.bindPopup("Panda");
-MantaRay.bindPopup("Manta ray");
-PolarBear.bindPopup("Polar bear");
-Lion.bindPopup("Lion");
-Camel.bindPopup("Camel");
+Koala = L.marker([-26.38, 135.24]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+GalapagosTortoise = L.marker([-0.63, -90.36]).bindPopup("Galaá<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+Penguin = L.marker([-73.25, 18.10]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+Bizon = L.marker([38.20, -101.35]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+Slut = L.marker([-5.70, -59.19]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+Panda = L.marker([28.23, 110.86]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+MantaRay = L.marker([-5.70, 119.29]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+PolarBear = L.marker([64.74, -69.03]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+Lion = L.marker([-20.72, 23.72]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+Camel = L.marker([23.16, 7.56]).bindPopup("Koala<br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
+//
+//
+//
+// Koala.bindPopup(customPopup);
+// GalapagosTortoise .bindPopup("Galápagos tortoise");
+// Penguin.bindPopup("Penguin");
+// Bizon.bindPopup("Bizon");
+// Slut.bindPopup("Sloth");
+// Panda.bindPopup("Panda");
+// MantaRay.bindPopup("Manta ray");
+// PolarBear.bindPopup("Polar bear");
+// Lion.bindPopup("Lion");
+// Camel.bindPopup("Camel");
 

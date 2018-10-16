@@ -17,3 +17,7 @@ body {
     margin: auto;
     padding: 15px;
 }
+
+.popup-header {
+    text-align: center;
+}

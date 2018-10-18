@@ -7,15 +7,21 @@ body {
     padding: 0;
     background-color: #333;
 }
+
+hr {
+    border-color: #222;
+}
 #map-canvas {
     height: 850px;
-    width: 100%;
+    max-width: 1024px;
+    margin: auto;
 }
 
 .container#col-map, .container#col-chart{
     width: 100%;
     margin: auto;
     padding: 15px;
+    color: white;
 }
 
 .popup-header {

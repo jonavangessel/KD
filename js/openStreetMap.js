@@ -21,4 +21,3 @@ PolarBear = L.marker([64.74, -69.03]).bindPopup("<h1 class='popup-header'>Polar 
 Lion = L.marker([-20.72, 23.72]).bindPopup("<h1 class='popup-header'>Lion</h1><br/><img src='img/lion.jpeg' width='300px'/>").addTo(map);
 Camel = L.marker([23.16, 7.56]).bindPopup("<h1 class='popup-header'>Camel</h1><br/><img src='img/camel.jpeg' width='300px'/>").addTo(map);
 
-Koala.onclick():

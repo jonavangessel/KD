@@ -30,14 +30,9 @@ $(Koala).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
 
@@ -50,16 +45,12 @@ $(GalapagosTortoise).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
+
 
 $(Penguin).click(function () {
     let mysparqlendpoint = "http://dbpedia.org/sparql?query=";
@@ -70,16 +61,12 @@ $(Penguin).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
+
 
 $(Bison).click(function () {
     let mysparqlendpoint = "http://dbpedia.org/sparql?query=";
@@ -90,16 +77,12 @@ $(Bison).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
+
 
 $(Slut).click(function () {
     let mysparqlendpoint = "http://dbpedia.org/sparql?query=";
@@ -110,16 +93,12 @@ $(Slut).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
+
 
 
 $(Panda).click(function () {
@@ -131,16 +110,12 @@ $(Panda).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
+
 
 $(MantaRay).click(function () {
     let mysparqlendpoint = "http://dbpedia.org/sparql?query=";
@@ -151,16 +126,12 @@ $(MantaRay).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
+
 
 $(PolarBear).click(function () {
     let mysparqlendpoint = "http://dbpedia.org/sparql?query=";
@@ -171,16 +142,12 @@ $(PolarBear).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
+
 
 $(Lion).click(function () {
     let mysparqlendpoint = "http://dbpedia.org/sparql?query=";
@@ -191,16 +158,12 @@ $(Lion).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
+
 
 $(Camel).click(function () {
     let mysparqlendpoint = "http://dbpedia.org/sparql?query=";
@@ -211,14 +174,9 @@ $(Camel).click(function () {
         dataType: "json",
         url: queryURL,
         success: function (data) {
-            let content = JSON.stringify(data);
+            let content = JSON.stringify(data.results.bindings[0].comment.value);
             document.getElementById("col-comment").innerHTML = content;
         }
-        // let content = data.results.bindings.0.comment.value;
-        // console.log(content);
-        // let obj = JSON.parse(data);
-        // let result = obj.comment;
-        //
     })
 });
 

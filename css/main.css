@@ -42,3 +42,20 @@ footer, #myChart-01 {
 #endangered{
     color: white;
 }
+
+#title{
+    color: white;
+}
+#endangeredAnimals{
+    padding: 20px;
+}
+
+#landAnimals{
+    color: white;
+    padding: 20px;
+}
+
+#seaAnimals{
+    color: white;
+    padding: 20px;
+}

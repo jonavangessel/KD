@@ -27,8 +27,8 @@
             <a class="navbar-brand" href="#">Animal Kingdom</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="#col-map">View I</a></li>
-            <li><a href="#col-chart">View II</a></li>
+            <li><a href="#col-map">Map</a></li>
+            <li><a href="#col-chart">Information</a></li>
         </ul>
         <button class="btn btn-danger navbar-btn">Donate</button>
     </div>
@@ -48,10 +48,6 @@
 <div class="container" id="col-chart">
     <div class="row">
         <div class="col-lg-6">
-            <canvas id="myChart-01" chart-data="dynamicData"></canvas>
-            <script src="js/chart01.js"></script>
-        </div>
-        <div class="col-lg-6">
             <div class="comment-header">
                 <h1>Information</h1><p><i>Source: <a href="http://www.dbpedia.org">Dbpedia</a></i></p>
             </div>
@@ -59,7 +55,24 @@
         </div>
     </div>
 </div>
-<div id="endangered"></div>
+
+<div id="endangeredAnimals">
+    <div>
+        <h3 id="title">Endangered?</h3>
+        <div id="endangered"></div>
+    </div>
+</div>
+
+<div id="landAnimals">
+    <h3 id="All land animals">All land animals</h3>
+    <div id="land"></div>
+</div>
+
+<div id="seaAnimals">
+    <h3 id="All sea animals">All sea animals</h3>
+    <div id="sea"></div>
+</div>
+
 <hr>
 
 <footer class="page-footer font-small unique-color-dark pt-4">

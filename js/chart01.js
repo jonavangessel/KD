@@ -6,7 +6,7 @@ let barChart = new Chart(myChart, {
     data: {
         labels: ["Koala", "Galápagos tortoise", "Penguin", "Bison", "Sloth", "Panda", "Manta ray", "Polar bear", "Lion", "Camel"],
         datasets: [{
-            data: [100, 200, 300, 400, 500, 500, 400, 300, 200, 100],
+            data: [82, 200, 300, 400, 500, 500, 400, 300, 200, 100],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

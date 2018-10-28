@@ -25,6 +25,7 @@ $(Koala).click(function () {
     let mysparqlendpoint = "http://dbpedia.org/sparql?query=";
     let mysparqlquery = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?animal ?comment WHERE { ?animal rdf:type dbo:Mammal . ?animal rdfs:label 'Koala'@en . ?animal dbo:abstract ?comment FILTER (lang(?comment) = 'en') }";
     let queryURL = mysparqlendpoint+encodeURI(mysparqlquery).replace(/#/g, '%23');
+    console.log(queryURL);
     $.ajax({
         method: "GET",
         dataType: "json",

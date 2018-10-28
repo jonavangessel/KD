@@ -1,3 +1,40 @@
+$( document ).ready(function () {
+    let dynamicData = [];
+
+    let mysparqlendpoint = "http://localhost:5820/ProjectAnimals/query?query=";
+
+    let mysparqlquery_landAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT (COUNT(*) AS ?a) WHERE{?a rdf:type dc:land_Animals}";
+    let mysparqlquery_seaAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT (COUNT(*) AS ?a) WHERE{?a rdf:type dc:sea_Animals}";
+
+    // land_Animals
+    $.ajax({
+        headers: {
+            "Accept":"application/sparql-results+json",
+            "Content-type":"application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(mysparqlquery_landAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            dynamicData += JSON.stringify(data.results.bindings[0].a.value);
+        }
+    });
+
+    // sea_Animals
+    $.ajax({
+        headers: {
+            "Accept":"application/sparql-results+json",
+            "Content-type":"application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(mysparqlquery_seaAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            dynamicData += JSON.stringify(data.results.bindings[0].a.value);
+            console.log(dynamicData)
+        }
+    });
+
+});
+
 let myChart = document.getElementById("myChart-01");
 Chart.defaults.global.defaultFontColor = 'white';
 Chart.defaults.global.defaultFontSize = 14;

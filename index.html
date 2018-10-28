@@ -21,31 +21,6 @@
 </head>
 <body>
 
-<script>
-    $( document ).ready(function () {
-        let dynamicData = [];
-
-        let mysparqlendpoint = "http://localhost:5820/ProjectAnimals/query?query=";
-        let mysparqlquery = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT (COUNT(*) AS ?a) WHERE{?a rdf:type dc:land_Animals}";
-        let queryURL = mysparqlendpoint + encodeURI(mysparqlquery).replace(/#/g, '%23');
-        console.log(queryURL);
-        $.ajax({
-            headers: {
-                Accept: "application/sparql-results+json",
-                "Content-type": "application/sparql-results+json"
-            },
-            method: "GET",
-            accept: "application/sparql-results+json",
-            url: queryURL,
-            success: function (data) {
-                let content = JSON.stringify(data.results.bindings[0].a.value);
-                dynamicData += content;
-                console.log(dynamicData)
-            }
-        });
-    });
-</script>
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">

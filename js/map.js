@@ -181,3 +181,223 @@ $(Camel).click(function () {
     })
 });
 
+$(Koala).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(GalapagosTortoise).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(Penguin).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(Bison).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(Slut).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(Panda).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(MantaRay).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(PolarBear).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(Lion).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+
+$(Camel).click(function() {
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
+    let endangeredAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT DISTINCT ?a WHERE{dc:Lion dc:isEndangered ?a}";
+    $.ajax({
+        headers: {
+            "Accept": "application/sparql-results+json",
+            "Content-type": "application/sparql-results+json"
+        },
+        method: "GET",
+        url: mysparqlendpoint + encodeURI(endangeredAnimals).replace(/#/g, '%23'),
+        success: function (data) {
+            let content = JSON.stringify(data.results.bindings[0].a.value);
+            console.log(content);
+            if(content==='"http://purl.org/dc/elements/1.1/True"'){
+                document.getElementById("endangered").innerHTML = "this animal is endangered"
+            } else{
+                document.getElementById("endangered").innerHTML = "this animal isn't endangered"
+            }
+        }
+    })
+});
+

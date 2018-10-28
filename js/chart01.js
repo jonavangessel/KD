@@ -1,7 +1,7 @@
 $( document ).ready(function () {
     let dynamicData = [];
 
-    let mysparqlendpoint = "http://localhost:5820/ProjectAnimals/query?query=";
+    let mysparqlendpoint = "http://localhost:5820/AnimalKingdom/query?query=";
 
     let mysparqlquery_landAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT (COUNT(*) AS ?a) WHERE{?a rdf:type dc:land_Animals}";
     let mysparqlquery_seaAnimals = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dc: <http://purl.org/dc/elements/1.1/> SELECT (COUNT(*) AS ?a) WHERE{?a rdf:type dc:sea_Animals}";

@@ -31,7 +31,7 @@ $(Koala).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -46,7 +46,7 @@ $(GalapagosTortoise).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -62,7 +62,7 @@ $(Penguin).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -78,7 +78,7 @@ $(Bison).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -94,7 +94,7 @@ $(Slut).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -111,7 +111,7 @@ $(Panda).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -127,7 +127,7 @@ $(MantaRay).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -143,7 +143,7 @@ $(PolarBear).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -159,7 +159,7 @@ $(Lion).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });
@@ -175,7 +175,7 @@ $(Camel).click(function () {
         url: queryURL,
         success: function (data) {
             let content = JSON.stringify(data.results.bindings[0].comment.value);
-            document.getElementById("col-comment").innerHTML = content;
+            document.getElementById("getComment").innerHTML = content;
         }
     })
 });

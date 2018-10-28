@@ -1,10 +1,10 @@
 var myChart = document.getElementById("myChart-01");
+Chart.defaults.global.defaultFontColor = 'white';
 var barChart = new Chart(myChart, {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
         labels: ["Animal1", "Animal2", "Animal3", "Animal4", "Animal5", "Animal6"],
         datasets: [{
-            label: 'Population',
             data: [100, 200, 300, 400, 500, 600],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -27,11 +27,16 @@ var barChart = new Chart(myChart, {
     },
     options: {
         scales: {
-            yAxes: [{
+            xAxes: [{
                 ticks: {
                     beginAtZero:true
                 }
             }]
+        },
+        title: {
+            display: true,
+            text: "Chart01",
+            fontSize: 32
         }
     }
 });

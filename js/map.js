@@ -9,7 +9,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
 }).addTo(map);
 
-// Animals
+// Animals (10)
 Koala = L.marker([-26.38, 135.24]).bindPopup("<h1 class='popup-header'>Koala</h1><br/><img src='img/koala.jpeg' width='300px'/>").addTo(map);
 GalapagosTortoise = L.marker([-0.63, -90.36]).bindPopup("<h1 class='popup-header'>Galápagos tortoise</h1><br/><img src='img/galapagos_tortoise.jpeg' width='300px'/>").addTo(map);
 Penguin = L.marker([-73.25, 18.10]).bindPopup("<h1 class='popup-header'>Penguin</h1><br/><img src='img/penguin.jpeg' width='300px'/>").addTo(map);
